@@ -21,7 +21,7 @@ from keras.callbacks import EarlyStopping
 X_train = X_train.reshape(X_train.shape[0], 28, 28, 1)
 X_test = X_test.reshape(X_test.shape[0], 28, 28, 1)
 
-# Normalize the RGB codes so that it is on a [0, 255] range
+# Normalize the RGB codes
 X_train = X_train.astype('float32')
 X_train = X_train / 255
 X_test = X_test.astype('float32')
